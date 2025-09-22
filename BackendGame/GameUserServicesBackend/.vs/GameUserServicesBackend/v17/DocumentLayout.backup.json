@@ -1,0 +1,262 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{309B72A3-199E-42F4-AE85-6D1F96F148AC}|GameUserServicesBackend\\GameUserServicesBackend.csproj|d:\\a_fpt\\ky_8_2025\\exe201\\game\\backendgame\\gameuserservicesbackend\\gameuserservicesbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{309B72A3-199E-42F4-AE85-6D1F96F148AC}|GameUserServicesBackend\\GameUserServicesBackend.csproj|solutionrelative:gameuserservicesbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{309B72A3-199E-42F4-AE85-6D1F96F148AC}|GameUserServicesBackend\\GameUserServicesBackend.csproj|d:\\a_fpt\\ky_8_2025\\exe201\\game\\backendgame\\gameuserservicesbackend\\gameuserservicesbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{309B72A3-199E-42F4-AE85-6D1F96F148AC}|GameUserServicesBackend\\GameUserServicesBackend.csproj|solutionrelative:gameuserservicesbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{309B72A3-199E-42F4-AE85-6D1F96F148AC}|GameUserServicesBackend\\GameUserServicesBackend.csproj|d:\\a_fpt\\ky_8_2025\\exe201\\game\\backendgame\\gameuserservicesbackend\\gameuserservicesbackend\\controllers\\catecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{309B72A3-199E-42F4-AE85-6D1F96F148AC}|GameUserServicesBackend\\GameUserServicesBackend.csproj|solutionrelative:gameuserservicesbackend\\controllers\\catecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|d:\\a_fpt\\ky_8_2025\\exe201\\game\\backendgame\\gameuserservicesbackend\\dal\\dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|solutionrelative:dal\\dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|d:\\a_fpt\\ky_8_2025\\exe201\\game\\backendgame\\gameuserservicesbackend\\dal\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|solutionrelative:dal\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE94DA2-FA5D-4626-B7CC-6EEA3FFE5523}|BLL\\BLL.csproj|d:\\a_fpt\\ky_8_2025\\exe201\\game\\backendgame\\gameuserservicesbackend\\bll\\services\\categorydetailservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EE94DA2-FA5D-4626-B7CC-6EEA3FFE5523}|BLL\\BLL.csproj|solutionrelative:bll\\services\\categorydetailservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|d:\\a_fpt\\ky_8_2025\\exe201\\game\\backendgame\\gameuserservicesbackend\\dal\\repositories\\categorydetailsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|solutionrelative:dal\\repositories\\categorydetailsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE94DA2-FA5D-4626-B7CC-6EEA3FFE5523}|BLL\\BLL.csproj|d:\\a_fpt\\ky_8_2025\\exe201\\game\\backendgame\\gameuserservicesbackend\\bll\\services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EE94DA2-FA5D-4626-B7CC-6EEA3FFE5523}|BLL\\BLL.csproj|solutionrelative:bll\\services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{309B72A3-199E-42F4-AE85-6D1F96F148AC}|GameUserServicesBackend\\GameUserServicesBackend.csproj|d:\\a_fpt\\ky_8_2025\\exe201\\game\\backendgame\\gameuserservicesbackend\\gameuserservicesbackend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{309B72A3-199E-42F4-AE85-6D1F96F148AC}|GameUserServicesBackend\\GameUserServicesBackend.csproj|solutionrelative:gameuserservicesbackend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|d:\\a_fpt\\ky_8_2025\\exe201\\game\\backendgame\\gameuserservicesbackend\\dal\\dao\\catedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|solutionrelative:dal\\dao\\catedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|d:\\a_fpt\\ky_8_2025\\exe201\\game\\backendgame\\gameuserservicesbackend\\dal\\dao\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|solutionrelative:dal\\dao\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{309B72A3-199E-42F4-AE85-6D1F96F148AC}|GameUserServicesBackend\\GameUserServicesBackend.csproj|d:\\a_fpt\\ky_8_2025\\exe201\\game\\backendgame\\gameuserservicesbackend\\gameuserservicesbackend\\gameuserservicesbackend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{309B72A3-199E-42F4-AE85-6D1F96F148AC}|GameUserServicesBackend\\GameUserServicesBackend.csproj|solutionrelative:gameuserservicesbackend\\gameuserservicesbackend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE94DA2-FA5D-4626-B7CC-6EEA3FFE5523}|BLL\\BLL.csproj|d:\\a_fpt\\ky_8_2025\\exe201\\game\\backendgame\\gameuserservicesbackend\\bll\\bll.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6EE94DA2-FA5D-4626-B7CC-6EEA3FFE5523}|BLL\\BLL.csproj|solutionrelative:bll\\bll.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 16,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DAL.csproj",
+              "DocumentMoniker": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\DAL\\DAL.csproj",
+              "RelativeDocumentMoniker": "DAL\\DAL.csproj",
+              "ToolTip": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\DAL\\DAL.csproj",
+              "RelativeToolTip": "DAL\\DAL.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-22T07:27:52.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CateController.cs",
+              "DocumentMoniker": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\GameUserServicesBackend\\Controllers\\CateController.cs",
+              "RelativeDocumentMoniker": "GameUserServicesBackend\\Controllers\\CateController.cs",
+              "ToolTip": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\GameUserServicesBackend\\Controllers\\CateController.cs",
+              "RelativeToolTip": "GameUserServicesBackend\\Controllers\\CateController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA8wAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T15:28:04.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CategoryDetailServices.cs",
+              "DocumentMoniker": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\BLL\\Services\\CategoryDetailServices.cs",
+              "RelativeDocumentMoniker": "BLL\\Services\\CategoryDetailServices.cs",
+              "ToolTip": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\BLL\\Services\\CategoryDetailServices.cs",
+              "RelativeToolTip": "BLL\\Services\\CategoryDetailServices.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAmwBEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T15:23:21.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CateDAO.cs",
+              "DocumentMoniker": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\DAL\\DAO\\CateDAO.cs",
+              "RelativeDocumentMoniker": "DAL\\DAO\\CateDAO.cs",
+              "ToolTip": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\DAL\\DAO\\CateDAO.cs",
+              "RelativeToolTip": "DAL\\DAO\\CateDAO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T14:58:19.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CategoryDetailsRepository.cs",
+              "DocumentMoniker": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\DAL\\Repositories\\CategoryDetailsRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\Repositories\\CategoryDetailsRepository.cs",
+              "ToolTip": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\DAL\\Repositories\\CategoryDetailsRepository.cs",
+              "RelativeToolTip": "DAL\\Repositories\\CategoryDetailsRepository.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAmwA4AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T14:43:40.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\GameUserServicesBackend\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "GameUserServicesBackend\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\GameUserServicesBackend\\Controllers\\UserController.cs",
+              "RelativeToolTip": "GameUserServicesBackend\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAIwBUAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T16:28:07.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserServices.cs",
+              "DocumentMoniker": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\BLL\\Services\\UserServices.cs",
+              "RelativeDocumentMoniker": "BLL\\Services\\UserServices.cs",
+              "ToolTip": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\BLL\\Services\\UserServices.cs",
+              "RelativeToolTip": "BLL\\Services\\UserServices.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwBoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T16:26:22.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserDAO.cs",
+              "DocumentMoniker": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\DAL\\DAO\\UserDAO.cs",
+              "RelativeDocumentMoniker": "DAL\\DAO\\UserDAO.cs",
+              "ToolTip": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\DAL\\DAO\\UserDAO.cs",
+              "RelativeToolTip": "DAL\\DAO\\UserDAO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T16:11:05.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\DAL\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\Repositories\\UserRepository.cs",
+              "ToolTip": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\DAL\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "DAL\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAwAAAAgAAAAAAAmwBQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T15:55:30.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\GameUserServicesBackend\\appsettings.json",
+              "RelativeDocumentMoniker": "GameUserServicesBackend\\appsettings.json",
+              "ToolTip": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\GameUserServicesBackend\\appsettings.json",
+              "RelativeToolTip": "GameUserServicesBackend\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-18T15:54:25.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BLL.csproj",
+              "DocumentMoniker": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\BLL\\BLL.csproj",
+              "RelativeDocumentMoniker": "BLL\\BLL.csproj",
+              "ToolTip": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\BLL\\BLL.csproj",
+              "RelativeToolTip": "BLL\\BLL.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-18T15:50:24.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GameUserServicesBackend.csproj",
+              "DocumentMoniker": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\GameUserServicesBackend\\GameUserServicesBackend.csproj",
+              "RelativeDocumentMoniker": "GameUserServicesBackend\\GameUserServicesBackend.csproj",
+              "ToolTip": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\GameUserServicesBackend\\GameUserServicesBackend.csproj",
+              "RelativeToolTip": "GameUserServicesBackend\\GameUserServicesBackend.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-18T15:50:30.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\GameUserServicesBackend\\Program.cs",
+              "RelativeDocumentMoniker": "GameUserServicesBackend\\Program.cs",
+              "ToolTip": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\GameUserServicesBackend\\Program.cs",
+              "RelativeToolTip": "GameUserServicesBackend\\Program.cs",
+              "ViewState": "AgIAAAsAAACA/v///z8uwB4AAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T15:49:59.775Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
