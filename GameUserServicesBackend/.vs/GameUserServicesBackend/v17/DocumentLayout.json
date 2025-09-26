@@ -1,57 +1,93 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\",
+  "WorkspaceRootPath": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{309B72A3-199E-42F4-AE85-6D1F96F148AC}|GameUserServicesBackend\\GameUserServicesBackend.csproj|d:\\a_fpt\\ky_8_2025\\exe201\\game\\backendgame\\gameuserservicesbackend\\gameuserservicesbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{309B72A3-199E-42F4-AE85-6D1F96F148AC}|GameUserServicesBackend\\GameUserServicesBackend.csproj|solutionrelative:gameuserservicesbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{309B72A3-199E-42F4-AE85-6D1F96F148AC}|GameUserServicesBackend\\GameUserServicesBackend.csproj|d:\\a_fpt\\ky_8_2025\\exe201\\game\\backendgame\\gameuserservicesbackend\\gameuserservicesbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{309B72A3-199E-42F4-AE85-6D1F96F148AC}|GameUserServicesBackend\\GameUserServicesBackend.csproj|d:\\2025year\\toolfordev\\folk\\repostorage\\out_source_androidgame\\gameuserservicesbackend\\gameuserservicesbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{309B72A3-199E-42F4-AE85-6D1F96F148AC}|GameUserServicesBackend\\GameUserServicesBackend.csproj|solutionrelative:gameuserservicesbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{309B72A3-199E-42F4-AE85-6D1F96F148AC}|GameUserServicesBackend\\GameUserServicesBackend.csproj|d:\\a_fpt\\ky_8_2025\\exe201\\game\\backendgame\\gameuserservicesbackend\\gameuserservicesbackend\\controllers\\catecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{309B72A3-199E-42F4-AE85-6D1F96F148AC}|GameUserServicesBackend\\GameUserServicesBackend.csproj|solutionrelative:gameuserservicesbackend\\controllers\\catecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|d:\\2025year\\toolfordev\\folk\\repostorage\\out_source_androidgame\\gameuserservicesbackend\\dal\\context\\db_userservicescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|solutionrelative:dal\\context\\db_userservicescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|d:\\a_fpt\\ky_8_2025\\exe201\\game\\backendgame\\gameuserservicesbackend\\dal\\dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|solutionrelative:dal\\dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{309B72A3-199E-42F4-AE85-6D1F96F148AC}|GameUserServicesBackend\\GameUserServicesBackend.csproj|d:\\2025year\\toolfordev\\folk\\repostorage\\out_source_androidgame\\gameuserservicesbackend\\gameuserservicesbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{309B72A3-199E-42F4-AE85-6D1F96F148AC}|GameUserServicesBackend\\GameUserServicesBackend.csproj|solutionrelative:gameuserservicesbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|d:\\a_fpt\\ky_8_2025\\exe201\\game\\backendgame\\gameuserservicesbackend\\dal\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|solutionrelative:dal\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|d:\\2025year\\toolfordev\\folk\\repostorage\\out_source_androidgame\\gameuserservicesbackend\\dal\\context\\memberpackage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|solutionrelative:dal\\context\\memberpackage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EE94DA2-FA5D-4626-B7CC-6EEA3FFE5523}|BLL\\BLL.csproj|d:\\a_fpt\\ky_8_2025\\exe201\\game\\backendgame\\gameuserservicesbackend\\bll\\services\\categorydetailservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EE94DA2-FA5D-4626-B7CC-6EEA3FFE5523}|BLL\\BLL.csproj|solutionrelative:bll\\services\\categorydetailservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|d:\\2025year\\toolfordev\\folk\\repostorage\\out_source_androidgame\\gameuserservicesbackend\\dal\\context\\plantedlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|solutionrelative:dal\\context\\plantedlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|d:\\a_fpt\\ky_8_2025\\exe201\\game\\backendgame\\gameuserservicesbackend\\dal\\repositories\\categorydetailsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|solutionrelative:dal\\repositories\\categorydetailsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|d:\\2025year\\toolfordev\\folk\\repostorage\\out_source_androidgame\\gameuserservicesbackend\\dal\\context\\scene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|solutionrelative:dal\\context\\scene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EE94DA2-FA5D-4626-B7CC-6EEA3FFE5523}|BLL\\BLL.csproj|d:\\a_fpt\\ky_8_2025\\exe201\\game\\backendgame\\gameuserservicesbackend\\bll\\services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EE94DA2-FA5D-4626-B7CC-6EEA3FFE5523}|BLL\\BLL.csproj|solutionrelative:bll\\services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|d:\\2025year\\toolfordev\\folk\\repostorage\\out_source_androidgame\\gameuserservicesbackend\\dal\\context\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|solutionrelative:dal\\context\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{309B72A3-199E-42F4-AE85-6D1F96F148AC}|GameUserServicesBackend\\GameUserServicesBackend.csproj|d:\\a_fpt\\ky_8_2025\\exe201\\game\\backendgame\\gameuserservicesbackend\\gameuserservicesbackend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{309B72A3-199E-42F4-AE85-6D1F96F148AC}|GameUserServicesBackend\\GameUserServicesBackend.csproj|solutionrelative:gameuserservicesbackend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|d:\\2025year\\toolfordev\\folk\\repostorage\\out_source_androidgame\\gameuserservicesbackend\\dal\\context\\transactionhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|solutionrelative:dal\\context\\transactionhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|d:\\a_fpt\\ky_8_2025\\exe201\\game\\backendgame\\gameuserservicesbackend\\dal\\dao\\catedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|solutionrelative:dal\\dao\\catedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|d:\\2025year\\toolfordev\\folk\\repostorage\\out_source_androidgame\\gameuserservicesbackend\\dal\\context\\scenedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|solutionrelative:dal\\context\\scenedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|d:\\a_fpt\\ky_8_2025\\exe201\\game\\backendgame\\gameuserservicesbackend\\dal\\dao\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|solutionrelative:dal\\dao\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|d:\\2025year\\toolfordev\\folk\\repostorage\\out_source_androidgame\\gameuserservicesbackend\\dal\\context\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|solutionrelative:dal\\context\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{309B72A3-199E-42F4-AE85-6D1F96F148AC}|GameUserServicesBackend\\GameUserServicesBackend.csproj|d:\\a_fpt\\ky_8_2025\\exe201\\game\\backendgame\\gameuserservicesbackend\\gameuserservicesbackend\\gameuserservicesbackend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|d:\\2025year\\toolfordev\\folk\\repostorage\\out_source_androidgame\\gameuserservicesbackend\\dal\\context\\categorydetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|solutionrelative:dal\\context\\categorydetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{309B72A3-199E-42F4-AE85-6D1F96F148AC}|GameUserServicesBackend\\GameUserServicesBackend.csproj|d:\\2025year\\toolfordev\\folk\\repostorage\\out_source_androidgame\\gameuserservicesbackend\\gameuserservicesbackend\\gameuserservicesbackend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{309B72A3-199E-42F4-AE85-6D1F96F148AC}|GameUserServicesBackend\\GameUserServicesBackend.csproj|solutionrelative:gameuserservicesbackend\\gameuserservicesbackend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EE94DA2-FA5D-4626-B7CC-6EEA3FFE5523}|BLL\\BLL.csproj|d:\\a_fpt\\ky_8_2025\\exe201\\game\\backendgame\\gameuserservicesbackend\\bll\\bll.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{309B72A3-199E-42F4-AE85-6D1F96F148AC}|GameUserServicesBackend\\GameUserServicesBackend.csproj|d:\\2025year\\toolfordev\\folk\\repostorage\\out_source_androidgame\\gameuserservicesbackend\\gameuserservicesbackend\\controllers\\catecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{309B72A3-199E-42F4-AE85-6D1F96F148AC}|GameUserServicesBackend\\GameUserServicesBackend.csproj|solutionrelative:gameuserservicesbackend\\controllers\\catecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|d:\\2025year\\toolfordev\\folk\\repostorage\\out_source_androidgame\\gameuserservicesbackend\\dal\\dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|solutionrelative:dal\\dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|d:\\2025year\\toolfordev\\folk\\repostorage\\out_source_androidgame\\gameuserservicesbackend\\dal\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|solutionrelative:dal\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE94DA2-FA5D-4626-B7CC-6EEA3FFE5523}|BLL\\BLL.csproj|d:\\2025year\\toolfordev\\folk\\repostorage\\out_source_androidgame\\gameuserservicesbackend\\bll\\services\\categorydetailservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EE94DA2-FA5D-4626-B7CC-6EEA3FFE5523}|BLL\\BLL.csproj|solutionrelative:bll\\services\\categorydetailservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|d:\\2025year\\toolfordev\\folk\\repostorage\\out_source_androidgame\\gameuserservicesbackend\\dal\\repositories\\categorydetailsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|solutionrelative:dal\\repositories\\categorydetailsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE94DA2-FA5D-4626-B7CC-6EEA3FFE5523}|BLL\\BLL.csproj|d:\\2025year\\toolfordev\\folk\\repostorage\\out_source_androidgame\\gameuserservicesbackend\\bll\\services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EE94DA2-FA5D-4626-B7CC-6EEA3FFE5523}|BLL\\BLL.csproj|solutionrelative:bll\\services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{309B72A3-199E-42F4-AE85-6D1F96F148AC}|GameUserServicesBackend\\GameUserServicesBackend.csproj|d:\\2025year\\toolfordev\\folk\\repostorage\\out_source_androidgame\\gameuserservicesbackend\\gameuserservicesbackend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{309B72A3-199E-42F4-AE85-6D1F96F148AC}|GameUserServicesBackend\\GameUserServicesBackend.csproj|solutionrelative:gameuserservicesbackend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|d:\\2025year\\toolfordev\\folk\\repostorage\\out_source_androidgame\\gameuserservicesbackend\\dal\\dao\\catedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|solutionrelative:dal\\dao\\catedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|d:\\2025year\\toolfordev\\folk\\repostorage\\out_source_androidgame\\gameuserservicesbackend\\dal\\dao\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F9F86F3-B3D6-475E-AEF6-16700B65B110}|DAL\\DAL.csproj|solutionrelative:dal\\dao\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE94DA2-FA5D-4626-B7CC-6EEA3FFE5523}|BLL\\BLL.csproj|d:\\2025year\\toolfordev\\folk\\repostorage\\out_source_androidgame\\gameuserservicesbackend\\bll\\bll.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{6EE94DA2-FA5D-4626-B7CC-6EEA3FFE5523}|BLL\\BLL.csproj|solutionrelative:bll\\bll.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
@@ -62,69 +98,159 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 16,
+          "SelectedChildIndex": 24,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DAL.csproj",
-              "DocumentMoniker": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\DAL\\DAL.csproj",
-              "RelativeDocumentMoniker": "DAL\\DAL.csproj",
-              "ToolTip": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\DAL\\DAL.csproj",
-              "RelativeToolTip": "DAL\\DAL.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-09-22T07:27:52.091Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CateController.cs",
-              "DocumentMoniker": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\GameUserServicesBackend\\Controllers\\CateController.cs",
-              "RelativeDocumentMoniker": "GameUserServicesBackend\\Controllers\\CateController.cs",
-              "ToolTip": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\GameUserServicesBackend\\Controllers\\CateController.cs",
-              "RelativeToolTip": "GameUserServicesBackend\\Controllers\\CateController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAA8wAkAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\DAL\\Context\\User.cs",
+              "RelativeDocumentMoniker": "DAL\\Context\\User.cs",
+              "ToolTip": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\DAL\\Context\\User.cs",
+              "RelativeToolTip": "DAL\\Context\\User.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T15:28:04.926Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T14:17:22.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Transactionhistory.cs",
+              "DocumentMoniker": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\DAL\\Context\\Transactionhistory.cs",
+              "RelativeDocumentMoniker": "DAL\\Context\\Transactionhistory.cs",
+              "ToolTip": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\DAL\\Context\\Transactionhistory.cs",
+              "RelativeToolTip": "DAL\\Context\\Transactionhistory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T14:17:21.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Scenedetail.cs",
+              "DocumentMoniker": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\DAL\\Context\\Scenedetail.cs",
+              "RelativeDocumentMoniker": "DAL\\Context\\Scenedetail.cs",
+              "ToolTip": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\DAL\\Context\\Scenedetail.cs",
+              "RelativeToolTip": "DAL\\Context\\Scenedetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T14:17:20.751Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "Scene.cs",
+              "DocumentMoniker": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\DAL\\Context\\Scene.cs",
+              "RelativeDocumentMoniker": "DAL\\Context\\Scene.cs",
+              "ToolTip": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\DAL\\Context\\Scene.cs",
+              "RelativeToolTip": "DAL\\Context\\Scene.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T14:17:20.063Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Plantedlog.cs",
+              "DocumentMoniker": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\DAL\\Context\\Plantedlog.cs",
+              "RelativeDocumentMoniker": "DAL\\Context\\Plantedlog.cs",
+              "ToolTip": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\DAL\\Context\\Plantedlog.cs",
+              "RelativeToolTip": "DAL\\Context\\Plantedlog.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAA4wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T14:17:17.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Memberpackage.cs",
+              "DocumentMoniker": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\DAL\\Context\\Memberpackage.cs",
+              "RelativeDocumentMoniker": "DAL\\Context\\Memberpackage.cs",
+              "ToolTip": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\DAL\\Context\\Memberpackage.cs",
+              "RelativeToolTip": "DAL\\Context\\Memberpackage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T14:17:16.492Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Item.cs",
+              "DocumentMoniker": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\DAL\\Context\\Item.cs",
+              "RelativeDocumentMoniker": "DAL\\Context\\Item.cs",
+              "ToolTip": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\DAL\\Context\\Item.cs",
+              "RelativeToolTip": "DAL\\Context\\Item.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAiwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T14:10:29.649Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "db_userservicesContext.cs",
+              "DocumentMoniker": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\DAL\\Context\\db_userservicesContext.cs",
+              "RelativeDocumentMoniker": "DAL\\Context\\db_userservicesContext.cs",
+              "ToolTip": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\DAL\\Context\\db_userservicesContext.cs",
+              "RelativeToolTip": "DAL\\Context\\db_userservicesContext.cs",
+              "ViewState": "AgIAAK0AAAAAAAAAAAA1wL4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T14:17:04.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Categorydetail.cs",
+              "DocumentMoniker": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\DAL\\Context\\Categorydetail.cs",
+              "RelativeDocumentMoniker": "DAL\\Context\\Categorydetail.cs",
+              "ToolTip": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\DAL\\Context\\Categorydetail.cs",
+              "RelativeToolTip": "DAL\\Context\\Categorydetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T14:17:00.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DAL.csproj",
+              "DocumentMoniker": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\DAL\\DAL.csproj",
+              "RelativeDocumentMoniker": "DAL\\DAL.csproj",
+              "ToolTip": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\DAL\\DAL.csproj",
+              "RelativeToolTip": "DAL\\DAL.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-22T07:27:52.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CateController.cs",
+              "DocumentMoniker": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\GameUserServicesBackend\\Controllers\\CateController.cs",
+              "RelativeDocumentMoniker": "GameUserServicesBackend\\Controllers\\CateController.cs",
+              "ToolTip": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\GameUserServicesBackend\\Controllers\\CateController.cs",
+              "RelativeToolTip": "GameUserServicesBackend\\Controllers\\CateController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA8wAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T15:28:04.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "CategoryDetailServices.cs",
-              "DocumentMoniker": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\BLL\\Services\\CategoryDetailServices.cs",
+              "DocumentMoniker": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\BLL\\Services\\CategoryDetailServices.cs",
               "RelativeDocumentMoniker": "BLL\\Services\\CategoryDetailServices.cs",
-              "ToolTip": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\BLL\\Services\\CategoryDetailServices.cs",
+              "ToolTip": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\BLL\\Services\\CategoryDetailServices.cs",
               "RelativeToolTip": "BLL\\Services\\CategoryDetailServices.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAmwBEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -132,11 +258,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 19,
               "Title": "CateDAO.cs",
-              "DocumentMoniker": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\DAL\\DAO\\CateDAO.cs",
+              "DocumentMoniker": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\DAL\\DAO\\CateDAO.cs",
               "RelativeDocumentMoniker": "DAL\\DAO\\CateDAO.cs",
-              "ToolTip": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\DAL\\DAO\\CateDAO.cs",
+              "ToolTip": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\DAL\\DAO\\CateDAO.cs",
               "RelativeToolTip": "DAL\\DAO\\CateDAO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -144,11 +270,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 16,
               "Title": "CategoryDetailsRepository.cs",
-              "DocumentMoniker": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\DAL\\Repositories\\CategoryDetailsRepository.cs",
+              "DocumentMoniker": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\DAL\\Repositories\\CategoryDetailsRepository.cs",
               "RelativeDocumentMoniker": "DAL\\Repositories\\CategoryDetailsRepository.cs",
-              "ToolTip": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\DAL\\Repositories\\CategoryDetailsRepository.cs",
+              "ToolTip": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\DAL\\Repositories\\CategoryDetailsRepository.cs",
               "RelativeToolTip": "DAL\\Repositories\\CategoryDetailsRepository.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAmwA4AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -156,11 +282,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 18,
               "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\GameUserServicesBackend\\Controllers\\UserController.cs",
+              "DocumentMoniker": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\GameUserServicesBackend\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "GameUserServicesBackend\\Controllers\\UserController.cs",
-              "ToolTip": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\GameUserServicesBackend\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\GameUserServicesBackend\\Controllers\\UserController.cs",
               "RelativeToolTip": "GameUserServicesBackend\\Controllers\\UserController.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAIwBUAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -168,11 +294,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 17,
               "Title": "UserServices.cs",
-              "DocumentMoniker": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\BLL\\Services\\UserServices.cs",
+              "DocumentMoniker": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\BLL\\Services\\UserServices.cs",
               "RelativeDocumentMoniker": "BLL\\Services\\UserServices.cs",
-              "ToolTip": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\BLL\\Services\\UserServices.cs",
+              "ToolTip": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\BLL\\Services\\UserServices.cs",
               "RelativeToolTip": "BLL\\Services\\UserServices.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAIBJwBoAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -180,11 +306,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 20,
               "Title": "UserDAO.cs",
-              "DocumentMoniker": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\DAL\\DAO\\UserDAO.cs",
+              "DocumentMoniker": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\DAL\\DAO\\UserDAO.cs",
               "RelativeDocumentMoniker": "DAL\\DAO\\UserDAO.cs",
-              "ToolTip": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\DAL\\DAO\\UserDAO.cs",
+              "ToolTip": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\DAL\\DAO\\UserDAO.cs",
               "RelativeToolTip": "DAL\\DAO\\UserDAO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -192,11 +318,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 14,
               "Title": "UserRepository.cs",
-              "DocumentMoniker": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\DAL\\Repositories\\UserRepository.cs",
+              "DocumentMoniker": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\DAL\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "DAL\\Repositories\\UserRepository.cs",
-              "ToolTip": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\DAL\\Repositories\\UserRepository.cs",
+              "ToolTip": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\DAL\\Repositories\\UserRepository.cs",
               "RelativeToolTip": "DAL\\Repositories\\UserRepository.cs",
               "ViewState": "AgIAAAwAAAAgAAAAAAAmwBQAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -204,55 +330,98 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\GameUserServicesBackend\\appsettings.json",
+              "DocumentMoniker": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\GameUserServicesBackend\\appsettings.json",
               "RelativeDocumentMoniker": "GameUserServicesBackend\\appsettings.json",
-              "ToolTip": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\GameUserServicesBackend\\appsettings.json",
+              "ToolTip": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\GameUserServicesBackend\\appsettings.json",
               "RelativeToolTip": "GameUserServicesBackend\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-18T15:54:25.317Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-18T15:54:25.317Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 21,
               "Title": "BLL.csproj",
-              "DocumentMoniker": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\BLL\\BLL.csproj",
+              "DocumentMoniker": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\BLL\\BLL.csproj",
               "RelativeDocumentMoniker": "BLL\\BLL.csproj",
-              "ToolTip": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\BLL\\BLL.csproj",
+              "ToolTip": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\BLL\\BLL.csproj",
               "RelativeToolTip": "BLL\\BLL.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-09-18T15:50:24.173Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-18T15:50:24.173Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "GameUserServicesBackend.csproj",
-              "DocumentMoniker": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\GameUserServicesBackend\\GameUserServicesBackend.csproj",
+              "DocumentMoniker": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\GameUserServicesBackend\\GameUserServicesBackend.csproj",
               "RelativeDocumentMoniker": "GameUserServicesBackend\\GameUserServicesBackend.csproj",
-              "ToolTip": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\GameUserServicesBackend\\GameUserServicesBackend.csproj",
+              "ToolTip": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\GameUserServicesBackend\\GameUserServicesBackend.csproj",
               "RelativeToolTip": "GameUserServicesBackend\\GameUserServicesBackend.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-09-18T15:50:30.497Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-18T15:50:30.497Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\GameUserServicesBackend\\Program.cs",
+              "DocumentMoniker": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\GameUserServicesBackend\\Program.cs",
               "RelativeDocumentMoniker": "GameUserServicesBackend\\Program.cs",
-              "ToolTip": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\GameUserServicesBackend\\Program.cs",
+              "ToolTip": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\GameUserServicesBackend\\Program.cs",
               "RelativeToolTip": "GameUserServicesBackend\\Program.cs",
-              "ViewState": "AgIAAAsAAACA/v///z8uwB4AAABHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-18T15:49:59.775Z",
               "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 191,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 176,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 176,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:9:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
             }
           ]
         }

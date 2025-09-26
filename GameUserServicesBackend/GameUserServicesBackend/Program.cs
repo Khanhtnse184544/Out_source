@@ -26,12 +26,17 @@ namespace GameUserServicesBackend
             builder.Services.AddScoped<CategoryDetailServices>();
             builder.Services.AddScoped<CateDAO>();
 
+            //            builder.Services.AddDbContext<db_userservicesContext>(options =>
+            //            options.UseMySql(
+            //            builder.Configuration.GetConnectionString("DefaultConnection"),
+            //            new MySqlServerVersion(new Version(9, 0)
+            //            ) // Thay bằng version MySQL bạn dùng
+            //    )
+            //);
+
             builder.Services.AddDbContext<db_userservicesContext>(options =>
-    options.UseMySql(
-        builder.Configuration.GetConnectionString("DefaultConnection"),
-        new MySqlServerVersion(new Version(9, 0)) // Thay bằng version MySQL bạn dùng
-    )
-);
+                options.UseNpgsql(builder.Configuration.GetConnectionString("ConnectionStrings"))
+            );
 
 
             builder.Services.AddCors(options =>

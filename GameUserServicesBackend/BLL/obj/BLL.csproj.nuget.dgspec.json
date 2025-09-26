@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\BLL\\BLL.csproj": {}
+    "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\BLL\\BLL.csproj": {}
   },
   "projects": {
-    "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\BLL\\BLL.csproj": {
+    "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\BLL\\BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\BLL\\BLL.csproj",
+        "projectUniqueName": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\BLL\\BLL.csproj",
         "projectName": "BLL",
-        "projectPath": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\BLL\\BLL.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\BLL\\obj\\",
+        "projectPath": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\BLL\\BLL.csproj",
+        "packagesPath": "C:\\Users\\trand\\.nuget\\packages\\",
+        "outputPath": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\BLL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\2025YEAR\\VisualStudio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\trand\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,15 +26,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\DAL\\DAL.csproj": {
-                "projectPath": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\DAL\\DAL.csproj"
+              "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\DAL\\DAL.csproj": {
+                "projectPath": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\DAL\\DAL.csproj"
               }
             }
           }
@@ -49,11 +48,17 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -70,24 +75,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\DAL\\DAL.csproj": {
+    "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\DAL\\DAL.csproj",
+        "projectUniqueName": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\DAL\\DAL.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Game\\BackendGame\\GameUserServicesBackend\\DAL\\obj\\",
+        "projectPath": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\trand\\.nuget\\packages\\",
+        "outputPath": "D:\\2025YEAR\\ToolForDev\\Folk\\RepoStorage\\Out_source_AndroidGame\\GameUserServicesBackend\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\2025YEAR\\VisualStudio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\trand\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -96,7 +101,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -115,7 +119,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -140,6 +144,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.9, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[9.0.0, )"
             },
             "MySql.Data": {
               "target": "Package",
@@ -174,7 +182,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
