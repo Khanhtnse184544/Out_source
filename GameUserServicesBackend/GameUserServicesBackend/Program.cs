@@ -35,7 +35,7 @@ namespace GameUserServicesBackend
             //);
 
             builder.Services.AddDbContext<db_userservicesContext>(options =>
-                options.UseNpgsql(builder.Configuration.GetConnectionString("ConnectionStrings"))
+                options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"))
             );
 
 

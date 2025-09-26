@@ -34,16 +34,21 @@ public partial class db_userservicesContext : DbContext
 
 
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlServer(GetConnectionString());
+	protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+	{
+		if (!optionsBuilder.IsConfigured)
+		{
+			optionsBuilder.UseNpgsql(GetConnectionString());
+		}
+	}
 
-    private string GetConnectionString()
+	private string GetConnectionString()
     {
         IConfiguration config = new ConfigurationBuilder()
              .SetBasePath(Directory.GetCurrentDirectory())
                     .AddJsonFile("appsettings.json", true, true)
                     .Build();
-        var strConn = config["ConnectionStrings:DefaultConnection"];
+		var strConn = config["ConnectionStrings:DefaultConnection"];
         return strConn;
     }
 
