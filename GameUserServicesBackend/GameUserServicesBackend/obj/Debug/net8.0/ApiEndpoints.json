@@ -82,5 +82,15 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GameUserServicesBackend.Controllers.HealthController",
+    "Method": "Get",
+    "RelativePath": "health",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   }
 ]

@@ -34,23 +34,8 @@ public partial class db_userservicesContext : DbContext
 
 
 
-	protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-	{
-		if (!optionsBuilder.IsConfigured)
-		{
-			optionsBuilder.UseNpgsql(GetConnectionString());
-		}
-	}
-
-	private string GetConnectionString()
-    {
-        IConfiguration config = new ConfigurationBuilder()
-             .SetBasePath(Directory.GetCurrentDirectory())
-                    .AddJsonFile("appsettings.json", true, true)
-                    .Build();
-		var strConn = config["ConnectionStrings:DefaultConnection"];
-        return strConn;
-    }
+	// Removed OnConfiguring method - connection string is now handled in Program.cs
+	// This prevents duplicate configuration and follows best practices
 
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
