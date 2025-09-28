@@ -2,8 +2,8 @@
 {
     public class CateDAO
     {
-        public string itemId { get; set; }
+        public string itemId { get; set; } = string.Empty;
 
-        public int quantity { get; set; }
+        public int? quantity { get; set; }
     }
 }

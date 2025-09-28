@@ -112,6 +112,11 @@ public partial class db_userservicesContext : DbContext
             entity.Property(e => e.Status).HasMaxLength(50);
             entity.Property(e => e.UserId).HasMaxLength(50);
 
+            // Indexes for game data performance
+            entity.HasIndex(e => e.UserId).HasDatabaseName("ix_plantedlog_userid");
+            entity.HasIndex(e => e.ItemId).HasDatabaseName("ix_plantedlog_itemid");
+            entity.HasIndex(e => e.Status).HasDatabaseName("ix_plantedlog_status");
+
             entity.HasOne(d => d.Item).WithMany()
                 .HasForeignKey(d => d.ItemId)
                 .HasConstraintName("fk_planted_item");
@@ -130,6 +135,10 @@ public partial class db_userservicesContext : DbContext
             entity.Property(e => e.UserId).HasMaxLength(20);
             entity.Property(e => e.DateSave).HasColumnType("timestamp without time zone");
             entity.Property(e => e.Status).HasMaxLength(20);
+
+            // Indexes for scene data performance
+            entity.HasIndex(e => e.Status).HasDatabaseName("ix_scene_status");
+            entity.HasIndex(e => e.DateSave).HasDatabaseName("ix_scene_datesave");
         });
 
         modelBuilder.Entity<Scenedetail>(entity =>
@@ -141,6 +150,10 @@ public partial class db_userservicesContext : DbContext
             entity.Property(e => e.ItemId).HasMaxLength(20);
             entity.Property(e => e.Name).HasMaxLength(100);
             entity.Property(e => e.UserId).HasMaxLength(20);
+
+            // Indexes for scene details performance
+            entity.HasIndex(e => e.UserId).HasDatabaseName("ix_scenedetails_userid");
+            entity.HasIndex(e => e.ItemId).HasDatabaseName("ix_scenedetails_itemid");
 
             entity.HasOne(d => d.User).WithMany()
                 .HasForeignKey(d => d.UserId)

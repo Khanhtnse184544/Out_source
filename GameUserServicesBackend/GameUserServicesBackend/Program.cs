@@ -32,6 +32,12 @@ namespace GameUserServicesBackend
             
             // Configure PayOS
             builder.Services.Configure<PayOSConfig>(builder.Configuration.GetSection("PayOS"));
+
+            // Game Data Services
+            builder.Services.AddScoped<PlantedLogRepository>();
+            builder.Services.AddScoped<SceneRepository>();
+            builder.Services.AddScoped<SceneDetailRepository>();
+            builder.Services.AddScoped<GameDataService>();
             
             // Add DbContext with scoped lifetime
             // Prefer DbContext pooling for better throughput
