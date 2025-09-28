@@ -1,4 +1,5 @@
 ﻿using BLL.Services;
+using BLL.Models;
 using DAL.Context;
 using DAL.DAO;
 using DAL.Repositories;
@@ -26,6 +27,44 @@ namespace GameUserServicesBackend
             builder.Services.AddScoped<CategoryDetailServices>();
             builder.Services.AddScoped<CateDAO>();
 
+            // Payment Services
+            builder.Services.AddScoped<IPaymentService, PaymentService>();
+            
+            // Configure PayOS
+            builder.Services.Configure<PayOSConfig>(builder.Configuration.GetSection("PayOS"));
+            
+            // Add DbContext with scoped lifetime
+            // Prefer DbContext pooling for better throughput
+            builder.Services.AddDbContextPool<db_userservicesContext>(options =>
+            {
+                options.UseNpgsql(
+                    builder.Configuration.GetConnectionString("DefaultConnection"),
+                    npgsqlOptions =>
+                    {
+                        npgsqlOptions.EnableRetryOnFailure(3);
+                        npgsqlOptions.CommandTimeout(30);
+                    }
+                );
+
+                if (builder.Environment.IsDevelopment())
+                {
+                    options.EnableSensitiveDataLogging();
+                }
+            });
+
+            // Factory for creating DbContext in background tasks safely
+            builder.Services.AddPooledDbContextFactory<db_userservicesContext>(options =>
+            {
+                options.UseNpgsql(
+                    builder.Configuration.GetConnectionString("DefaultConnection"),
+                    npgsqlOptions =>
+                    {
+                        npgsqlOptions.EnableRetryOnFailure(3);
+                        npgsqlOptions.CommandTimeout(30);
+                    }
+                );
+            });
+
             //            builder.Services.AddDbContext<db_userservicesContext>(options =>
             //            options.UseMySql(
             //            builder.Configuration.GetConnectionString("DefaultConnection"),
@@ -34,9 +73,7 @@ namespace GameUserServicesBackend
             //    )
             //);
 
-            builder.Services.AddDbContext<db_userservicesContext>(options =>
-                options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"))
-            );
+            // Kept for reference: standard AddDbContext was replaced by AddDbContextPool above
 
 
             builder.Services.AddCors(options =>

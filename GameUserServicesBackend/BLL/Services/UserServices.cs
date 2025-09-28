@@ -13,18 +13,18 @@ namespace BLL.Services
 
         }
 
-        public User? LoginWithEmailPassword(string email, string password)
+        public async Task<User?> LoginWithEmailPasswordAsync(string email, string password, CancellationToken cancellationToken = default)
         {
-            return _userRepository.GetUserByEmailPassword(email, password);
+            return await _userRepository.GetUserByEmailPasswordAsync(email, password, cancellationToken);
         }
 
-        public string Register(UserDAO newUser)
+        public async Task<string> RegisterAsync(UserDAO newUser, CancellationToken cancellationToken = default)
         {
             var user = new User();
             user.UserName = newUser.username;
             user.Password = newUser.password;
             user.Email = newUser.email;
-            return _userRepository.AddUser(user);
+            return await _userRepository.AddUserAsync(user, cancellationToken);
         }
     }
 }

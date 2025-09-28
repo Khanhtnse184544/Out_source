@@ -65,6 +65,10 @@ public partial class db_userservicesContext : DbContext
             entity.Property(e => e.UserId).HasMaxLength(50);
             entity.Property(e => e.ItemId).HasMaxLength(20);
 
+            // Indexes to speed up common lookups
+            entity.HasIndex(e => e.UserId).HasDatabaseName("ix_categorydetails_userid");
+            entity.HasIndex(e => e.ItemId).HasDatabaseName("ix_categorydetails_itemid");
+
             entity.HasOne(d => d.Item).WithMany(p => p.Categorydetails)
                 .HasForeignKey(d => d.ItemId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
@@ -153,6 +157,11 @@ public partial class db_userservicesContext : DbContext
             entity.Property(e => e.DateTrade).HasColumnType("timestamp without time zone");
             entity.Property(e => e.Status).HasMaxLength(100);
             entity.Property(e => e.UserId).HasMaxLength(50);
+            entity.Property(e => e.Amount).HasColumnType("numeric(18,2)");
+
+            // Helpful indexes for lookups/filters
+            entity.HasIndex(e => e.UserId).HasDatabaseName("ix_tx_userid");
+            entity.HasIndex(e => e.Status).HasDatabaseName("ix_tx_status");
 
             entity.HasOne(d => d.User).WithMany(p => p.Transactionhistories)
                 .HasForeignKey(d => d.UserId)

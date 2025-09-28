@@ -15,15 +15,17 @@ namespace GameUserServicesBackend.Controllers
             _categoryDetailServices = categoryDetailServices;
         }
         [HttpGet("CategoryByUserId")]
-        public IActionResult LoadCategoryByUSer(string userId)
+        public async Task<IActionResult> LoadCategoryByUSer([FromQuery] string userId, CancellationToken cancellationToken)
         {
-            return Ok(_categoryDetailServices.GetCategorydetailByUserId(userId));
+            var data = await _categoryDetailServices.GetCategorydetailByUserIdAsync(userId, cancellationToken);
+            return Ok(data);
         }
 
         [HttpPut("SaveCategory")]
-        public IActionResult SaveCategory(string userId, List<CateDAO> cateDAO)
+        public async Task<IActionResult> SaveCategory([FromQuery] string userId, [FromBody] List<CateDAO> cateDAO, CancellationToken cancellationToken)
         {
-            return Ok(_categoryDetailServices.AddCategorydetail(userId, cateDAO));
+            var result = await _categoryDetailServices.AddCategorydetailAsync(userId, cateDAO, cancellationToken);
+            return Ok(result);
         }
     }
 }

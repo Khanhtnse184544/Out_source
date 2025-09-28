@@ -17,16 +17,25 @@ namespace GameUserServicesBackend.Controllers
         }
 
         [HttpPost("Login")]
-        public User? Login(string email, string password)
+        public async Task<IActionResult> Login([FromBody] UserDAO payload, CancellationToken cancellationToken)
         {
-            return _userServices.LoginWithEmailPassword(email, password);
+            var user = await _userServices.LoginWithEmailPasswordAsync(payload.email, payload.password, cancellationToken);
+            if (user == null)
+            {
+                return Unauthorized(new { status = "error", message = "Invalid credentials" });
+            }
+            return Ok(new { status = "success", data = user });
         }
 
         [HttpPut("Register")]
-        public IActionResult Register([FromBody] UserDAO user)
+        public async Task<IActionResult> Register([FromBody] UserDAO user, CancellationToken cancellationToken)
         {
-            _userServices.Register(user);
-            return BadRequest();
+            var result = await _userServices.RegisterAsync(user, cancellationToken);
+            if (result == "RegisterSuccess")
+            {
+                return Ok(new { status = "success", message = result });
+            }
+            return BadRequest(new { status = "error", message = result });
         }
     }
 }

@@ -12,14 +12,14 @@ namespace BLL.Services
         {
             _categoryDetailsRepository = categoryDetailsRepository;
         }
-        public List<Categorydetail> GetCategorydetailByUserId(string userId)
+        public async Task<List<Categorydetail>> GetCategorydetailByUserIdAsync(string userId, CancellationToken cancellationToken = default)
         {
-            return _categoryDetailsRepository.GetCategorydetailByUserId(userId);
+            return await _categoryDetailsRepository.GetCategorydetailByUserIdAsync(userId, cancellationToken);
         }
 
-        public string AddCategorydetail(string userId, List<CateDAO> cateDAO)
+        public async Task<string> AddCategorydetailAsync(string userId, List<CateDAO> cateDAO, CancellationToken cancellationToken = default)
         {
-            return _categoryDetailsRepository.SaveCategory(userId, cateDAO);
+            return await _categoryDetailsRepository.SaveCategoryAsync(userId, cateDAO, cancellationToken);
         }
     }
 }
