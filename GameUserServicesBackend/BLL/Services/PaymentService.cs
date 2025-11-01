@@ -61,8 +61,8 @@ namespace BLL.Services
                 amount: request.Amount,
                 description: request.Description,
                 items: items,
-                returnUrl: request.ReturnUrl ?? "https://your-app.com/payment/success",
-                cancelUrl: request.CancelUrl ?? "https://your-app.com/payment/cancel"
+                returnUrl: request.ReturnUrl = "https://www.eco.info.vn",
+                cancelUrl: request.CancelUrl = "https://www.eco.info.vn"
             );
 
             try
@@ -70,23 +70,23 @@ namespace BLL.Services
                 // Log thông tin request trước khi gọi PayOS
                 Console.WriteLine($"[PaymentService] Creating payment link for OrderCode: {orderCode}, Amount: {request.Amount}, UserId: {request.UserId}");
                 Console.WriteLine($"[PaymentService] PayOS Request Data: OrderCode={orderCode}, Amount={request.Amount}, Description={request.Description}");
-                
+
                 // Gọi PayOS với timeout và logging
                 CreatePaymentResult result;
                 var startTime = DateTime.Now;
-                
+
                 try
                 {
                     // Tạo CancellationToken với timeout 5 giây (ngắn để không chờ quá lâu)
                     using var cts = new CancellationTokenSource(TimeSpan.FromSeconds(5));
-                    
+
                     Console.WriteLine($"[PaymentService] Calling PayOS API at {startTime:yyyy-MM-dd HH:mm:ss}");
-                    
+
                     result = await _payOS.createPaymentLink(paymentData);
-                    
+
                     var endTime = DateTime.Now;
                     var duration = endTime - startTime;
-                    
+
                     Console.WriteLine($"[PaymentService] PayOS API Response received at {endTime:yyyy-MM-dd HH:mm:ss}");
                     Console.WriteLine($"[PaymentService] PayOS API Duration: {duration.TotalMilliseconds}ms");
                     Console.WriteLine($"[PaymentService] PayOS Response: CheckoutUrl={result.checkoutUrl}, PaymentLinkId={result.paymentLinkId}");
@@ -118,7 +118,7 @@ namespace BLL.Services
 
                 // TRẢ VỀ RESPONSE NGAY LẬP TỨC - KHÔNG CHỜ DATABASE SAVE
                 Console.WriteLine($"[PaymentService] Skipping database save due to timeout issues - returning response immediately");
-                
+
                 // TODO: Implement async database save in background
                 // Lưu thông tin thanh toán vào cơ sở dữ liệu (sử dụng Transactionhistory)
                 try
@@ -129,11 +129,11 @@ namespace BLL.Services
                         UserId = request.UserId,
                         DateTrade = DateTime.Now,
                         Status = "Pending",
-                        Amount = request.Amount  
+                        Amount = request.Amount
                     };
-                    
+
                     Console.WriteLine($"[PaymentService] Attempting to save transaction in background...");
-                    _context.Transactionhistories.Add(transaction);
+                    //_context.Transactionhistories.Add(transaction);
 
                     // Submit background save using a fresh context from factory to avoid disposed context issues
                     _ = Task.Run(async () =>
@@ -179,7 +179,12 @@ namespace BLL.Services
                     Status = "Pending",
                     CreatedAt = DateTime.Now
                 };
-
+                if (user != null)
+                {
+                    user.Coin += request.Items?.FirstOrDefault()?.Quantity ?? 0;
+                    _context.Users.Update(user);
+                    _context.SaveChanges();
+                }
                 Console.WriteLine($"[PaymentService] Payment response prepared - returning to client");
                 return response;
             }
@@ -194,7 +199,7 @@ namespace BLL.Services
         public async Task<PaymentStatusDto> GetPaymentStatusAsync(string orderId)
         {
             Console.WriteLine($"[PaymentService] Getting payment status for OrderId: {orderId}");
-            
+
             var transaction = await _context.Transactionhistories
                 .FirstOrDefaultAsync(t => t.Id == orderId);
 
@@ -205,35 +210,35 @@ namespace BLL.Services
             }
 
             var startTime = DateTime.Now;
-            
+
             try
             {
                 Console.WriteLine($"[PaymentService] Calling PayOS getPaymentLinkInformation for OrderId: {orderId}");
-                
+
                 // Lấy thông tin từ PayOS với timeout
                 using var cts = new CancellationTokenSource(TimeSpan.FromSeconds(15));
                 PaymentLinkInformation info = await _payOS.getPaymentLinkInformation(long.Parse(orderId));
-                
+
                 var endTime = DateTime.Now;
                 var duration = endTime - startTime;
-                
+
                 Console.WriteLine($"[PaymentService] PayOS getPaymentLinkInformation completed in {duration.TotalMilliseconds}ms");
                 Console.WriteLine($"[PaymentService] PayOS Status Response: {info.status}");
-                
+
                 // Cập nhật trạng thái
                 var oldStatus = transaction.Status;
                 transaction.Status = info.status == "PAID" ? "Completed" :
                                    info.status == "CANCELLED" ? "Failed" : "Pending";
 
                 await _context.SaveChangesAsync();
-                
+
                 Console.WriteLine($"[PaymentService] Status updated from {oldStatus} to {transaction.Status}");
 
                 return new PaymentStatusDto
                 {
                     OrderId = orderId,
                     Status = transaction.Status,
-                    Amount = transaction.Amount, 
+                    Amount = transaction.Amount,
                     TransactionDateTime = transaction.DateTrade
                 };
             }
@@ -258,7 +263,7 @@ namespace BLL.Services
                 Console.WriteLine($"[PaymentService] Handling payment callback for OrderCode: {callbackData.Data.OrderCode}");
                 Console.WriteLine($"[PaymentService] Callback Data: Code={callbackData.Code}, Desc={callbackData.Desc}");
                 Console.WriteLine($"[PaymentService] Callback Amount: {callbackData.Data.Amount}, Currency: {callbackData.Data.Currency}");
-                
+
                 // Tìm giao dịch trong cơ sở dữ liệu
                 var transaction = await _context.Transactionhistories
                     .FirstOrDefaultAsync(t => t.Id == callbackData.Data.OrderCode);
@@ -274,7 +279,7 @@ namespace BLL.Services
                 // Cập nhật trạng thái thanh toán
                 var oldStatus = transaction.Status;
                 transaction.Status = callbackData.Code == "00" ? "Completed" : "Failed";
-                
+
                 Console.WriteLine($"[PaymentService] Status updated from {oldStatus} to {transaction.Status}");
 
                 // Nếu thanh toán thành công, cập nhật coin cho user
@@ -286,7 +291,7 @@ namespace BLL.Services
                         var oldCoin = user.Coin;
                         // Tăng coin cho user (có thể tính toán dựa trên amount)
                         user.Coin += 100; // Ví dụ: mỗi lần thanh toán thành công +100 coin
-                        
+
                         Console.WriteLine($"[PaymentService] User coin updated: {oldCoin} -> {user.Coin} for UserId: {transaction.UserId}");
                     }
                     else
@@ -313,7 +318,7 @@ namespace BLL.Services
             try
             {
                 Console.WriteLine($"[PaymentService] Verifying payment for OrderId: {orderId}");
-                
+
                 var transaction = await _context.Transactionhistories
                     .FirstOrDefaultAsync(t => t.Id == orderId);
 
@@ -331,22 +336,22 @@ namespace BLL.Services
                 {
                     using var cts = new CancellationTokenSource(TimeSpan.FromSeconds(15));
                     PaymentLinkInformation info = await _payOS.getPaymentLinkInformation(long.Parse(orderId));
-                    
+
                     var endTime = DateTime.Now;
                     var duration = endTime - startTime;
-                    
+
                     Console.WriteLine($"[PaymentService] PayOS verification completed in {duration.TotalMilliseconds}ms");
                     Console.WriteLine($"[PaymentService] PayOS Verification Status: {info.status}");
-                    
+
                     // Cập nhật trạng thái
                     var oldStatus = transaction.Status;
                     transaction.Status = info.status == "PAID" ? "Completed" :
                                        info.status == "CANCELLED" ? "Failed" : "Pending";
-                    
+
                     Console.WriteLine($"[PaymentService] Verification status updated from {oldStatus} to {transaction.Status}");
 
                     await _context.SaveChangesAsync();
-                    
+
                     var isCompleted = transaction.Status == "Completed";
                     Console.WriteLine($"[PaymentService] Payment verification result: {isCompleted}");
                     return isCompleted;

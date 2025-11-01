@@ -2,6 +2,6 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ActiveDebugProfile>https</ActiveDebugProfile>
-    <NameOfLastUsedPublishProfile>D:\2025YEAR\ToolForDev\Folk\RepoStorage\Out_source_AndroidGame\GameUserServicesBackend\GameUserServicesBackend\Properties\PublishProfiles\GameUserServicesBackend - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
+    <NameOfLastUsedPublishProfile>D:\A_FPT\Ky_8_2025\EXE201\Out_source\GameUserServicesBackend\GameUserServicesBackend\Properties\PublishProfiles\APIGame - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

@@ -35,46 +35,42 @@ namespace DAL.Repositories
             var sw = System.Diagnostics.Stopwatch.StartNew();
             try
             {
-                // Build a dictionary of existing items for the user
+                // Lấy toàn bộ item hiện có của user
                 var existing = await _userservicesContext.Categorydetails
                     .Where(c => c.UserId == userId)
-                    .ToDictionaryAsync(c => c.ItemId, c => c, cancellationToken);
+                    .ToListAsync(cancellationToken);
 
-                var upserts = new List<Categorydetail>(cateDAO.Count);
+                // Dùng HashSet để tìm nhanh itemId từ client
+                var clientItemIds = cateDAO.Select(c => c.itemId).ToHashSet();
 
+                // 1️⃣ Xóa những item không còn xuất hiện trong list client
+                var toRemove = existing
+                    .Where(dbItem => !clientItemIds.Contains(dbItem.ItemId))
+                    .ToList();
+
+                if (toRemove.Any())
+                {
+                    _userservicesContext.Categorydetails.RemoveRange(toRemove);
+                    Console.WriteLine($"🗑️ Removed {toRemove.Count} items not present in client data.");
+                }
+
+                // 2️⃣ Cập nhật hoặc thêm mới
                 foreach (var cate in cateDAO)
                 {
-                    if (existing.TryGetValue(cate.itemId, out var current))
+                    var existingItem = existing.FirstOrDefault(e => e.ItemId == cate.itemId);
+                    if (existingItem != null)
                     {
-                        current.Quantity = cate.quantity;
-                        upserts.Add(current);
+                        existingItem.Quantity = cate.quantity;
+                        _userservicesContext.Categorydetails.Update(existingItem);
                     }
                     else
                     {
-                        upserts.Add(new Categorydetail
+                        await _userservicesContext.Categorydetails.AddAsync(new Categorydetail
                         {
                             UserId = userId,
                             ItemId = cate.itemId,
                             Quantity = cate.quantity
-                        });
-                    }
-                }
-
-                // Use UpdateRange/AddRange with state detection
-                foreach (var entry in upserts)
-                {
-                    var tracked = _userservicesContext.Categorydetails.Local.FirstOrDefault(e => e.UserId == entry.UserId && e.ItemId == entry.ItemId);
-                    if (tracked == null)
-                    {
-                        // Attach as Added or Modified based on existence
-                        if (existing.ContainsKey(entry.ItemId))
-                        {
-                            _userservicesContext.Categorydetails.Update(entry);
-                        }
-                        else
-                        {
-                            await _userservicesContext.Categorydetails.AddAsync(entry, cancellationToken);
-                        }
+                        }, cancellationToken);
                     }
                 }
 
@@ -92,5 +88,6 @@ namespace DAL.Repositories
                 Console.WriteLine($"[CategoryDetailsRepository] SaveCategoryAsync took {sw.ElapsedMilliseconds}ms (items={cateDAO?.Count ?? 0})");
             }
         }
+
     }
 }

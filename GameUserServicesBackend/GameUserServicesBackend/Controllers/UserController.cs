@@ -1,5 +1,4 @@
 ﻿using BLL.Services;
-using DAL.Context;
 using DAL.DAO;
 using Microsoft.AspNetCore.Mvc;
 
@@ -19,12 +18,12 @@ namespace GameUserServicesBackend.Controllers
         [HttpPost("Login")]
         public async Task<IActionResult> Login([FromBody] UserDAO payload, CancellationToken cancellationToken)
         {
-            var user = await _userServices.LoginWithEmailPasswordAsync(payload.email, payload.password, cancellationToken);
+            var user = await _userServices.LoginWithEmailPasswordAsync(payload.Email, payload.Password, cancellationToken);
             if (user == null)
             {
                 return Unauthorized(new { status = "error", message = "Invalid credentials" });
             }
-            return Ok(new { status = "success", data = user });
+            return Ok(user);
         }
 
         [HttpPut("Register")]
@@ -36,6 +35,53 @@ namespace GameUserServicesBackend.Controllers
                 return Ok(new { status = "success", message = result });
             }
             return BadRequest(new { status = "error", message = result });
+        }
+
+        [HttpGet("GetUserTool")]
+        public IActionResult GetTools(string userId)
+        {
+            var userTools = _userServices.GetUsertools(userId);
+            if (userTools != null)
+            {
+                return Ok(userTools);
+            }
+            return BadRequest("Not found");
+        }
+
+        [HttpPut("UpdateUser")]
+        public IActionResult UpdateUser([FromBody] UserDAO user)
+        {
+            return Ok(_userServices.UpdateUser(user));
+        }
+
+        [HttpPut("SavePlantedLog")]
+        public IActionResult SavePlantedLog(string userId, List<string> ItemsId)
+        {
+            return Ok(_userServices.SavePlantedLog(userId, ItemsId));
+        }
+
+        [HttpPut("SaveUserTools")]
+        public IActionResult SaveUserTools(string userId, int qtyFr, int qtyPs)
+        {
+            return Ok(_userServices.SaveUserTools(userId, qtyFr, qtyPs));
+        }
+
+        [HttpGet("GetPlantLogByUserId")]
+        public IActionResult GetPlantLogByUserId(string userId)
+        {
+            return Ok(_userServices.GetPlantedlogs(userId));
+        }
+
+        [HttpPut("ConvertedTree")]
+        public IActionResult ConvertedTree(string userId, int qty, string itemId)
+        {
+            return Ok(_userServices.ConvertedTree(userId, qty, itemId));
+        }
+
+        [HttpGet("GetUserById")]
+        public IActionResult GetUserById(string userId)
+        {
+            return Ok(_userServices.GetUser(userId));
         }
     }
 }

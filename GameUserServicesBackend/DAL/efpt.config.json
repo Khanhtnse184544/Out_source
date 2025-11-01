@@ -4,7 +4,7 @@
    "ContextNamespace": null,
    "FilterSchemas": false,
    "IncludeConnectionString": false,
-   "MinimumProductVersion": "2.6.1130",
+   "MinimumProductVersion": "2.6.1186",
    "ModelNamespace": null,
    "OutputContextPath": null,
    "OutputPath": "Context",
@@ -16,27 +16,39 @@
    "T4TemplatePath": null,
    "Tables": [
       {
-         "Name": "categorydetails",
+         "Name": "unityservices.scene",
          "ObjectType": 0
       },
       {
-         "Name": "item",
+         "Name": "unityservices.scenedetails",
          "ObjectType": 0
       },
       {
-         "Name": "memberpackage",
+         "Name": "userservices.categorydetails",
          "ObjectType": 0
       },
       {
-         "Name": "plantedlog",
+         "Name": "userservices.item",
          "ObjectType": 0
       },
       {
-         "Name": "transactionhistory",
+         "Name": "userservices.memberpackage",
          "ObjectType": 0
       },
       {
-         "Name": "user",
+         "Name": "userservices.plantedlog",
+         "ObjectType": 0
+      },
+      {
+         "Name": "userservices.transactionhistory",
+         "ObjectType": 0
+      },
+      {
+         "Name": "userservices.user",
+         "ObjectType": 0
+      },
+      {
+         "Name": "userservices.usertool",
          "ObjectType": 0
       }
    ],
