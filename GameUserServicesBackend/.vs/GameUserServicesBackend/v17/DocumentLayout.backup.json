@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Out_source\\GameUserServicesBackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6EE94DA2-FA5D-4626-B7CC-6EEA3FFE5523}|BLL\\BLL.csproj|d:\\a_fpt\\ky_8_2025\\exe201\\out_source\\gameuserservicesbackend\\bll\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EE94DA2-FA5D-4626-B7CC-6EEA3FFE5523}|BLL\\BLL.csproj|solutionrelative:bll\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{309B72A3-199E-42F4-AE85-6D1F96F148AC}|GameUserServicesBackend\\GameUserServicesBackend.csproj|d:\\a_fpt\\ky_8_2025\\exe201\\out_source\\gameuserservicesbackend\\gameuserservicesbackend\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{309B72A3-199E-42F4-AE85-6D1F96F148AC}|GameUserServicesBackend\\GameUserServicesBackend.csproj|solutionrelative:gameuserservicesbackend\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -71,19 +67,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PaymentService.cs",
-              "DocumentMoniker": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Out_source\\GameUserServicesBackend\\BLL\\Services\\PaymentService.cs",
-              "RelativeDocumentMoniker": "BLL\\Services\\PaymentService.cs",
-              "ToolTip": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Out_source\\GameUserServicesBackend\\BLL\\Services\\PaymentService.cs",
-              "RelativeToolTip": "BLL\\Services\\PaymentService.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAawDoAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T03:05:48.85Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "PaymentController.cs",
               "DocumentMoniker": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Out_source\\GameUserServicesBackend\\GameUserServicesBackend\\Controllers\\PaymentController.cs",
               "RelativeDocumentMoniker": "GameUserServicesBackend\\Controllers\\PaymentController.cs",
@@ -91,12 +74,11 @@
               "RelativeToolTip": "GameUserServicesBackend\\Controllers\\PaymentController.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAzwBcAAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T03:05:39.091Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T03:05:39.091Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Out_source\\GameUserServicesBackend\\GameUserServicesBackend\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "GameUserServicesBackend\\Controllers\\UserController.cs",
@@ -108,7 +90,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "UserServices.cs",
               "DocumentMoniker": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Out_source\\GameUserServicesBackend\\BLL\\Services\\UserServices.cs",
               "RelativeDocumentMoniker": "BLL\\Services\\UserServices.cs",
@@ -116,12 +98,11 @@
               "RelativeToolTip": "BLL\\Services\\UserServices.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T06:27:15.564Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T06:27:15.564Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "D:\\A_FPT\\Ky_8_2025\\EXE201\\Out_source\\GameUserServicesBackend\\DAL\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "DAL\\Repositories\\UserRepository.cs",
