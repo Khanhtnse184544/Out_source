@@ -352,5 +352,54 @@ namespace BLL.Services
                 Console.WriteLine($"[GameDataService] SyncFullGameDataAsync took {sw.ElapsedMilliseconds}ms for UserId: {request.UserId}");
             }
         }
+
+        // Scene Methods
+        public async Task<GameSceneResponse> GetSceneAsync(string userId, CancellationToken cancellationToken = default)
+        {
+            var scene = await _sceneRepository.GetSceneByUserIdAsync(userId, cancellationToken);
+            var details = await _sceneDetailRepository.GetSceneDetailsByUserIdAsync(userId, cancellationToken);
+
+            return new GameSceneResponse
+            {
+                UserId = userId,
+                Status = scene?.Status,
+                DateSave = scene?.DateSave,
+                SceneDetails = details.Select(d => new SceneDetailDto
+                {
+                    ItemId = d.ItemId,
+                    Name = d.Name,
+                    Level = d.Level,
+                    ExpPerLevel = d.ExpPerLevel,
+                    PositionX = d.PositionX,
+                    PositionY = d.PositionY
+                }).ToList()
+            };
+        }
+
+        public async Task<string> SaveSceneAsync(SaveGameSceneRequest request, CancellationToken cancellationToken = default)
+        {
+            // 1. Save Scene (Upsert)
+            var scene = new Scene
+            {
+                UserId = request.UserId,
+                Status = request.Status,
+                DateSave = request.DateSave ?? DateTime.UtcNow
+            };
+            await _sceneRepository.SaveSceneAsync(scene, cancellationToken);
+
+            // 2. Save Details (Delete old + Insert new)
+            var details = request.SceneDetails.Select(d => new Scenedetail
+            {
+                UserId = request.UserId,
+                ItemId = d.ItemId,
+                Name = d.Name,
+                Level = d.Level,
+                ExpPerLevel = d.ExpPerLevel,
+                PositionX = d.PositionX,
+                PositionY = d.PositionY
+            }).ToList();
+
+            return await _sceneDetailRepository.SaveSceneDetailsAsync(request.UserId, details, cancellationToken);
+        }
     }
 }

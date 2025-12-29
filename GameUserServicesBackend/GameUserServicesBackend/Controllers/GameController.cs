@@ -407,5 +407,59 @@ namespace GameUserServicesBackend.Controllers
                 return StatusCode(500, new { status = "error", message = "Lỗi lấy dữ liệu game đầy đủ" });
             }
         }
+
+        /// <summary>
+        /// Save Scene Data
+        /// </summary>
+        [HttpPost("/api/save")]
+        public async Task<IActionResult> SaveScene([FromBody] SaveGameSceneRequest request, CancellationToken cancellationToken)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(ModelState);
+                }
+
+                var result = await _gameDataService.SaveSceneAsync(request, cancellationToken);
+                
+                if (result == "Success")
+                {
+                    return Ok(new { 
+                        status = "success", 
+                        message = "Scene saved successfully",
+                        data = new { savedCount = request.SceneDetails.Count }
+                    });
+                }
+                
+                return BadRequest(new { status = "error", message = result });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error saving scene for user {UserId}", request.UserId);
+                return StatusCode(500, new { status = "error", message = "Lỗi lưu scene" });
+            }
+        }
+
+        /// <summary>
+        /// Load Scene Data
+        /// </summary>
+        [HttpGet("/api/load/{userId}")]
+        public async Task<IActionResult> LoadScene(string userId, CancellationToken cancellationToken)
+        {
+            try
+            {
+                var sceneData = await _gameDataService.GetSceneAsync(userId, cancellationToken);
+                return Ok(new { 
+                    status = "success", 
+                    data = sceneData
+                });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error loading scene for user {UserId}", userId);
+                return StatusCode(500, new { status = "error", message = "Lỗi tải scene" });
+            }
+        }
     }
 }

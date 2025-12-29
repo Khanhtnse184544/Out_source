@@ -179,4 +179,32 @@ namespace BLL.Models
         public DateTime SyncTimestamp { get; set; }
         public List<string> SyncedSections { get; set; } = new();
     }
+
+    // Scene Save/Load DTOs
+    public class SceneDetailDto
+    {
+        public string ItemId { get; set; }
+        public string Name { get; set; }
+        public int? Level { get; set; }
+        public int? ExpPerLevel { get; set; }
+        public double? PositionX { get; set; }
+        public double? PositionY { get; set; }
+    }
+
+    public class SaveGameSceneRequest
+    {
+        [Required]
+        public string UserId { get; set; }
+        public string Status { get; set; }
+        public DateTime? DateSave { get; set; }
+        public List<SceneDetailDto> SceneDetails { get; set; } = new();
+    }
+
+    public class GameSceneResponse
+    {
+        public string UserId { get; set; }
+        public string Status { get; set; }
+        public DateTime? DateSave { get; set; }
+        public List<SceneDetailDto> SceneDetails { get; set; } = new();
+    }
 }
