@@ -31,16 +31,17 @@ namespace GameUserServicesBackend.Controllers
                 }
 
                 var result = await _gameDataService.SavePlantedTreesAsync(request, cancellationToken);
-                
+
                 if (result == "Success")
                 {
-                    return Ok(new { 
-                        status = "success", 
+                    return Ok(new
+                    {
+                        status = "success",
                         message = "Trees saved successfully",
                         data = new { savedCount = request.Trees.Count }
                     });
                 }
-                
+
                 return BadRequest(new { status = "error", message = result });
             }
             catch (Exception ex)
@@ -59,8 +60,9 @@ namespace GameUserServicesBackend.Controllers
             try
             {
                 var trees = await _gameDataService.GetPlantedTreesAsync(userId, cancellationToken);
-                return Ok(new { 
-                    status = "success", 
+                return Ok(new
+                {
+                    status = "success",
                     data = new { userId, trees }
                 });
             }
@@ -85,16 +87,17 @@ namespace GameUserServicesBackend.Controllers
                 }
 
                 var result = await _gameDataService.SaveHarvestLogAsync(request, cancellationToken);
-                
+
                 if (result == "Success")
                 {
-                    return Ok(new { 
-                        status = "success", 
+                    return Ok(new
+                    {
+                        status = "success",
                         message = "Harvest saved successfully",
                         data = new { savedCount = request.Harvests.Count }
                     });
                 }
-                
+
                 return BadRequest(new { status = "error", message = result });
             }
             catch (Exception ex)
@@ -113,8 +116,9 @@ namespace GameUserServicesBackend.Controllers
             try
             {
                 var harvests = await _gameDataService.GetHarvestLogAsync(userId, cancellationToken);
-                return Ok(new { 
-                    status = "success", 
+                return Ok(new
+                {
+                    status = "success",
                     data = new { userId, harvests }
                 });
             }
@@ -139,16 +143,17 @@ namespace GameUserServicesBackend.Controllers
                 }
 
                 var result = await _gameDataService.SaveInventoryAsync(request, cancellationToken);
-                
+
                 if (result == "Success")
                 {
-                    return Ok(new { 
-                        status = "success", 
+                    return Ok(new
+                    {
+                        status = "success",
                         message = "Inventory saved successfully",
                         data = new { savedCount = request.Items.Count }
                     });
                 }
-                
+
                 return BadRequest(new { status = "error", message = result });
             }
             catch (Exception ex)
@@ -167,8 +172,9 @@ namespace GameUserServicesBackend.Controllers
             try
             {
                 var items = await _gameDataService.GetInventoryAsync(userId, cancellationToken);
-                return Ok(new { 
-                    status = "success", 
+                return Ok(new
+                {
+                    status = "success",
                     data = new { userId, items }
                 });
             }
@@ -193,13 +199,15 @@ namespace GameUserServicesBackend.Controllers
                 }
 
                 var result = await _gameDataService.UpdateUserStatsAsync(request, cancellationToken);
-                
+
                 if (result == "Success")
                 {
-                    return Ok(new { 
-                        status = "success", 
+                    return Ok(new
+                    {
+                        status = "success",
                         message = "Stats updated successfully",
-                        data = new { 
+                        data = new
+                        {
                             userId = request.UserId,
                             coin = request.Coin,
                             expPerLevel = request.ExpPerLevel,
@@ -207,7 +215,7 @@ namespace GameUserServicesBackend.Controllers
                         }
                     });
                 }
-                
+
                 return BadRequest(new { status = "error", message = result });
             }
             catch (Exception ex)
@@ -226,14 +234,15 @@ namespace GameUserServicesBackend.Controllers
             try
             {
                 var stats = await _gameDataService.GetUserStatsAsync(userId, cancellationToken);
-                
+
                 if (stats == null)
                 {
                     return NotFound(new { status = "error", message = "User not found" });
                 }
 
-                return Ok(new { 
-                    status = "success", 
+                return Ok(new
+                {
+                    status = "success",
                     data = stats
                 });
             }
@@ -258,15 +267,16 @@ namespace GameUserServicesBackend.Controllers
                 }
 
                 var result = await _gameDataService.SaveSceneDataAsync(request, cancellationToken);
-                
+
                 if (result == "Success")
                 {
-                    return Ok(new { 
-                        status = "success", 
+                    return Ok(new
+                    {
+                        status = "success",
                         message = "Scene saved successfully"
                     });
                 }
-                
+
                 return BadRequest(new { status = "error", message = result });
             }
             catch (Exception ex)
@@ -285,14 +295,15 @@ namespace GameUserServicesBackend.Controllers
             try
             {
                 var sceneData = await _gameDataService.GetSceneDataAsync(userId, cancellationToken);
-                
+
                 if (sceneData == null)
                 {
                     return NotFound(new { status = "error", message = "Scene not found" });
                 }
 
-                return Ok(new { 
-                    status = "success", 
+                return Ok(new
+                {
+                    status = "success",
                     data = new { userId, sceneData }
                 });
             }
@@ -317,15 +328,16 @@ namespace GameUserServicesBackend.Controllers
                 }
 
                 var result = await _gameDataService.SaveSceneDetailsAsync(request, cancellationToken);
-                
+
                 if (result == "Success")
                 {
-                    return Ok(new { 
-                        status = "success", 
+                    return Ok(new
+                    {
+                        status = "success",
                         message = "Scene details saved successfully"
                     });
                 }
-                
+
                 return BadRequest(new { status = "error", message = result });
             }
             catch (Exception ex)
@@ -344,8 +356,9 @@ namespace GameUserServicesBackend.Controllers
             try
             {
                 var sceneDetails = await _gameDataService.GetSceneDetailsAsync(userId, cancellationToken);
-                return Ok(new { 
-                    status = "success", 
+                return Ok(new
+                {
+                    status = "success",
                     data = new { userId, sceneDetails }
                 });
             }
@@ -370,11 +383,13 @@ namespace GameUserServicesBackend.Controllers
                 }
 
                 var result = await _gameDataService.SyncFullGameDataAsync(request, cancellationToken);
-                
-                return Ok(new { 
+
+                return Ok(new
+                {
                     status = result.Status,
                     message = result.Message,
-                    data = new { 
+                    data = new
+                    {
                         syncTimestamp = result.SyncTimestamp,
                         syncedSections = result.SyncedSections
                     }
@@ -396,8 +411,9 @@ namespace GameUserServicesBackend.Controllers
             try
             {
                 var gameData = await _gameDataService.GetFullGameDataAsync(userId, cancellationToken);
-                return Ok(new { 
-                    status = "success", 
+                return Ok(new
+                {
+                    status = "success",
                     data = gameData
                 });
             }
@@ -422,16 +438,17 @@ namespace GameUserServicesBackend.Controllers
                 }
 
                 var result = await _gameDataService.SaveSceneAsync(request, cancellationToken);
-                
+
                 if (result == "Success")
                 {
-                    return Ok(new { 
-                        status = "success", 
+                    return Ok(new
+                    {
+                        status = "success",
                         message = "Scene saved successfully",
                         data = new { savedCount = request.SceneDetails.Count }
                     });
                 }
-                
+
                 return BadRequest(new { status = "error", message = result });
             }
             catch (Exception ex)
@@ -450,8 +467,9 @@ namespace GameUserServicesBackend.Controllers
             try
             {
                 var sceneData = await _gameDataService.GetSceneAsync(userId, cancellationToken);
-                return Ok(new { 
-                    status = "success", 
+                return Ok(new
+                {
+                    status = "success",
                     data = sceneData
                 });
             }

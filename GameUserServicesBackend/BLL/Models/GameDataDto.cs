@@ -7,7 +7,7 @@ namespace BLL.Models
     {
         [Required]
         public string ItemId { get; set; } = null!;
-        
+
         [Required]
         public string Status { get; set; } = null!;
     }
@@ -16,7 +16,7 @@ namespace BLL.Models
     {
         [Required]
         public string UserId { get; set; } = null!;
-        
+
         [Required]
         public List<PlantedTreeDto> Trees { get; set; } = new();
     }
@@ -32,7 +32,7 @@ namespace BLL.Models
     {
         [Required]
         public string ItemId { get; set; } = null!;
-        
+
         [Required]
         public string Status { get; set; } = null!;
     }
@@ -41,7 +41,7 @@ namespace BLL.Models
     {
         [Required]
         public string UserId { get; set; } = null!;
-        
+
         [Required]
         public List<HarvestDto> Harvests { get; set; } = new();
     }
@@ -57,7 +57,7 @@ namespace BLL.Models
     {
         [Required]
         public string ItemId { get; set; } = null!;
-        
+
         [Required]
         public int? Quantity { get; set; }
     }
@@ -66,7 +66,7 @@ namespace BLL.Models
     {
         [Required]
         public string UserId { get; set; } = null!;
-        
+
         [Required]
         public List<InventoryItemDto> Items { get; set; } = new();
     }
@@ -82,7 +82,7 @@ namespace BLL.Models
     {
         [Required]
         public string UserId { get; set; } = null!;
-        
+
         public int Coin { get; set; }
         public int ExpPerLevel { get; set; }
         public int Level { get; set; }
@@ -94,7 +94,7 @@ namespace BLL.Models
     {
         [Required]
         public string UserId { get; set; } = null!;
-        
+
         public int Coin { get; set; }
         public int ExpPerLevel { get; set; }
         public int Level { get; set; }
@@ -105,7 +105,7 @@ namespace BLL.Models
     {
         [Required]
         public string Status { get; set; } = null!;
-        
+
         public DateTime DateSave { get; set; }
     }
 
@@ -113,7 +113,7 @@ namespace BLL.Models
     {
         [Required]
         public string UserId { get; set; } = null!;
-        
+
         [Required]
         public SceneDataDto SceneData { get; set; } = null!;
     }
@@ -125,20 +125,20 @@ namespace BLL.Models
     }
 
     // Scene Details DTOs
-    public class SceneDetailDto
-    {
-        [Required]
-        public string ItemId { get; set; } = null!;
-        
-        [Required]
-        public string Name { get; set; } = null!;
-    }
+    //public class SceneDetailDto
+    //{
+    //    [Required]
+    //    public string ItemId { get; set; } = null!;
+
+    //    [Required]
+    //    public string Name { get; set; } = null!;
+    //}
 
     public class SaveSceneDetailsRequest
     {
         [Required]
         public string UserId { get; set; } = null!;
-        
+
         [Required]
         public List<SceneDetailDto> SceneDetails { get; set; } = new();
     }
@@ -154,7 +154,7 @@ namespace BLL.Models
     {
         [Required]
         public string UserId { get; set; } = null!;
-        
+
         public UserStatsDto? UserStats { get; set; }
         public List<InventoryItemDto>? Inventory { get; set; }
         public List<PlantedTreeDto>? PlantedTrees { get; set; }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GameUserServicesBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+45a7dc5c624ecdae077b243d3a12b526fec21cae")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0f4c4e91ea119717fc9fe162ccccf7bb2d0c4383")]
 [assembly: System.Reflection.AssemblyProductAttribute("GameUserServicesBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GameUserServicesBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
