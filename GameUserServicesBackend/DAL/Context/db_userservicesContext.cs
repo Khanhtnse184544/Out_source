@@ -125,11 +125,11 @@ public partial class db_userservicesContext : DbContext
 
         modelBuilder.Entity<Scenedetail>(entity =>
         {
-            entity
-                .HasNoKey()
-                .ToTable("scenedetails", "unityservices");
+            entity.HasKey(e => new { e.UserId, e.ItemId }).HasName("scenedetails_pkey");
 
-            entity.Property(e => e.ItemId).HasMaxLength(20);
+            entity.ToTable("scenedetails", "unityservices");
+
+            entity.Property(e => e.ItemId).HasMaxLength(50);
             entity.Property(e => e.Name).HasMaxLength(100);
             entity.Property(e => e.UserId).HasMaxLength(20);
 
