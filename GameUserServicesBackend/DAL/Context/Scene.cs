@@ -12,4 +12,6 @@ public partial class Scene
     public string Status { get; set; }
 
     public DateTime? DateSave { get; set; }
+
+    public virtual ICollection<Scenedetail> Scenedetails { get; set; } = new List<Scenedetail>();
 }

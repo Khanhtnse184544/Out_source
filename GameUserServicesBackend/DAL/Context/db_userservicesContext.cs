@@ -45,7 +45,7 @@ public partial class db_userservicesContext : DbContext
             .HasPostgresEnum("auth", "one_time_token_type", new[] { "confirmation_token", "reauthentication_token", "recovery_token", "email_change_token_new", "email_change_token_current", "phone_change_token" })
             .HasPostgresEnum("realtime", "action", new[] { "INSERT", "UPDATE", "DELETE", "TRUNCATE", "ERROR" })
             .HasPostgresEnum("realtime", "equality_op", new[] { "eq", "neq", "lt", "lte", "gt", "gte", "in" })
-            .HasPostgresEnum("storage", "buckettype", new[] { "STANDARD", "ANALYTICS" })
+            .HasPostgresEnum("storage", "buckettype", new[] { "STANDARD", "ANALYTICS", "VECTOR" })
             .HasPostgresExtension("extensions", "pg_stat_statements")
             .HasPostgresExtension("extensions", "pgcrypto")
             .HasPostgresExtension("extensions", "uuid-ossp")
@@ -109,7 +109,8 @@ public partial class db_userservicesContext : DbContext
 
             entity.HasOne(d => d.User).WithMany(p => p.Plantedlogs)
                 .HasForeignKey(d => d.UserId)
-                .HasConstraintName("fk_planted_user");
+                .OnDelete(DeleteBehavior.Cascade)
+                .HasConstraintName("plantedlog_UserId_fkey");
         });
 
         modelBuilder.Entity<Scene>(entity =>
@@ -118,7 +119,7 @@ public partial class db_userservicesContext : DbContext
 
             entity.ToTable("scene", "unityservices");
 
-            entity.Property(e => e.UserId).HasMaxLength(20);
+            entity.Property(e => e.UserId).HasColumnType("character varying");
             entity.Property(e => e.DateSave).HasColumnType("timestamp without time zone");
             entity.Property(e => e.Status).HasMaxLength(20);
         });
@@ -129,12 +130,13 @@ public partial class db_userservicesContext : DbContext
 
             entity.ToTable("scenedetails", "unityservices");
 
-            entity.Property(e => e.ItemId).HasMaxLength(50);
+            entity.Property(e => e.UserId).HasColumnType("character varying");
+            entity.Property(e => e.ItemId).HasMaxLength(20);
             entity.Property(e => e.Name).HasMaxLength(100);
-            entity.Property(e => e.UserId).HasMaxLength(20);
 
-            entity.HasOne(d => d.User).WithMany()
+            entity.HasOne(d => d.User).WithMany(p => p.Scenedetails)
                 .HasForeignKey(d => d.UserId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("fk_scene");
         });
 
@@ -183,7 +185,6 @@ public partial class db_userservicesContext : DbContext
 
             entity.HasOne(d => d.User).WithMany(p => p.Usertools)
                 .HasForeignKey(d => d.UserId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("usertool_UserId_fkey");
         });
         modelBuilder.HasSequence<int>("seq_schema_version", "graphql").IsCyclic();
